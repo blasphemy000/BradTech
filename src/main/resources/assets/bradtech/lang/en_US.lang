@@ -1,0 +1,87 @@
+itemGroup.BradTech=Brad Tech
+itemGroup.BradTechTools=Brad Tech Tools
+itemGroup.BradTechMachines=Brad Tech Machines
+
+tile.CopperOre.name=Copper Ore
+tile.TinOre.name=Tin Ore
+tile.NickelOre.name=Nickel Ore
+tile.AluminumOre.name=Aluminum Ore
+tile.PlatinumOre.name=Platinum Ore
+tile.UraniumOre.name=Uranium Ore
+tile.BlueQuartzOre.name=Blue Quartz Ore
+
+tile.NetherIronOre.name=Nether Iron Ore
+tile.NetherGoldOre.name=Nether Gold Ore
+tile.NetherCopperOre.name=Nether Copper Ore
+tile.NetherTinOre.name=Nether Tin Ore
+tile.NetherNickelOre.name=Nether Nickel Ore
+tile.NetherAluminumOre.name=Nether Aluminum Ore
+tile.NetherPlatinumOre.name=Nether Platinum Ore
+tile.NetherUraniumOre.name=Nether Uranium Ore
+tile.NetherBlueQuartzOre.name=Nether Blue Quartz Ore
+tile.NetherDiamondOre.name=Nether Diamond Ore
+tile.NetherEmeraldOre.name=Nether Emerald Ore
+tile.NetherRedstoneOre.name=Nether Redstone Ore
+tile.NetherCoalOre.name=Nether Coal Ore
+
+tile.CopperBlock.name=Block of Copper
+tile.TinBlock.name=Block of Tin
+tile.NickelBlock.name=Block of Nickel
+tile.AluminumBlock.name=Block of Aluminum
+tile.PlatinumBlock.name=Block of Platinum
+tile.UraniumBlock.name=Block of Uranium
+tile.BronzeBlock.name=Block of Bronze
+tile.SteelBlock.name=Block of Steel
+
+item.CopperIngot.name=Copper Ingot
+item.TinIngot.name=Tin Ingot
+item.NickelIngot.name=Nickel Ingot
+item.AluminumIngot.name=Aluminum Ingot
+item.PlatinumIngot.name=Platinum Ingot
+item.UraniumIngot.name=Uranium Ingot
+item.BronzeIngot.name=Bronze Ingot
+item.SteelIngot.name=Steel Ingot
+
+item.WoodCog.name=Wooden Cog
+item.StoneCog.name=Stone Cog
+item.AluminumCog.name=Aluminum Cog
+item.TinCog.name=Tin Cog
+item.IronCog.name=Iron Cog
+item.BronzeCog.name=Bronze Cog
+item.DiamondCog.name=Diamond Cog
+
+item.RawRubber.name=Raw Rubber
+item.ProcessedRubber.name=Processed Rubber
+item.Plastic.name=Plastic
+item.Laminate.name=Plastic Laminate
+
+item.CopperWire.name=Copper Wire
+item.InsulatedWire.name=Insulated Wire
+tile.InsulatedCopperWire.name=Insulated Copper Wire
+
+item.BlueQuartzGem.name=Blue Quartz Gem
+item.BlueQuartzDust.name=Blue Quartz Dust
+
+item.IronExtruder.name=Iron Extruder
+
+item.QuartzSword.name=Quartz Sword
+item.QuartzPickAxe.name=Quartz Pickaxe
+item.QuartzShovel.name=Quartz Shovel
+item.QuartzAxe.name=Quartz Axe
+item.QuartzHoe.name=Quartz Hoe
+
+item.QuartzHelmet.name=Quartz Helmet
+item.QuartzChestplate.name=Quartz Chestplate
+item.QuartzLeggings.name=Quartz Leggings
+item.QuartzBoots.name=Quartz Boots
+
+item.SonicScrewdriver.name=Sonic Screwdriver
+
+tile.ForgeOvenIdle.name=Forge Oven
+tile.ForgeOvenActive.name=Forge Oven (Active)
+
+tile.ObsidianTable.name=Obsidian Table
+tile.MachinistsTable.name=Machinist's Table
+
+container.MachinistsTable=Machinist's Crafting Table
+container.ForgeOven=Forge Oven
