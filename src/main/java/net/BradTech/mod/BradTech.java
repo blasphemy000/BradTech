@@ -3,6 +3,7 @@ package net.BradTech.mod;
 import net.BradTech.mod.blocks.*;
 import net.BradTech.mod.handler.CraftingHandler;
 import net.BradTech.mod.handler.GuiHandler;
+import net.BradTech.mod.handler.KeyInputHandler;
 import net.BradTech.mod.items.*;
 import net.BradTech.mod.proxy.CommonProxy;
 import net.BradTech.mod.tileentity.TileEntityForgeOven;
@@ -172,8 +173,7 @@ public class BradTech {
 		
 		// Setup and load the configuration file for BradTech.
 		bradTechConfig = new CfgHelper(preEvent);
-		System.out.printf("The loaded value of the dummy integer is: %d\n", bradTechConfig.getDummy());
-		
+
 		// Setup the creative tabs for this mod.
 		bradTechTab = new CreativeTabs("BradTech") {
 			@SideOnly(Side.CLIENT)
@@ -217,6 +217,9 @@ public class BradTech {
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
+		
+		KeyBindings.SetupKeyBindings();
+		FMLCommonHandler.instance().bus().register(new KeyInputHandler());
 		
 		// Setup the crafting handler for our durable crafting tools.
 		FMLCommonHandler.instance().bus().register(new CraftingHandler());

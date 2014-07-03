@@ -50,6 +50,8 @@ public class InitCrafting {
 			GameRegistry.addRecipe(new ItemStack(BradTech.itemLaminate, 4), new Object[]{"PP", "PP", 'P', BradTech.itemPlastic});
 			GameRegistry.addRecipe(new ItemStack(BradTech.blockInsulatedCopperWire, 3), new Object[]{"RRR", "CCC", "RRR", 'R', BradTech.itemProcessedRubber, 'C', BradTech.itemCopperWire});
 			
+			GameRegistry.addRecipe(new ItemStack(BradTech.blockMachinistsTable), new Object[]{"III", "WWW","WWW", 'I', Items.iron_ingot, 'W', Blocks.planks});
+			
 	
 			// Tool Recipes
 			GameRegistry.addRecipe(new ItemStack(BradTech.itemIronExtruder), new Object[]{" II", " II", "S  ", 'I', Items.iron_ingot, 'S', Items.stick});

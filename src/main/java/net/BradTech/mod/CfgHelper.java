@@ -42,6 +42,13 @@ public class CfgHelper {
 	}
 	
 	
+	private Property silkTouchDisablesPigmen;
+	
+	public boolean getSilkTouchDisablesPigmen() {
+		return silkTouchDisablesPigmen.getBoolean(true);
+	}
+	
+	
 	private Property dummy;
 	
 	public int getDummy() {
@@ -61,7 +68,10 @@ public class CfgHelper {
 			netherMiningAngersPigmen = config.get(Categories.NetherOres.toString(), "miningAngersPigmen", true);
 			netherMiningAngersPigmen.comment = "This sets whether or not nearby pigmen will become angered when you mine the nether ores.";
 			
-			dummy = config.get(Categories.MiscConfig.toString(), "dummyInteger", 100);
+			silkTouchDisablesPigmen = config.get(Categories.NetherOres.toString(), "silkTouchDisablesPigmen", true);
+			silkTouchDisablesPigmen.comment = "If true the pigmen will NOT become angry when mining nether ores with a silk-touch tool.";
+			
+			dummy = config.get(Categories.MiscConfig.toString(), "dummyInteger", -1);
 			dummy.comment = "This is just a dummy value for testing purposes.";
 			
 		} catch (Exception exc) {

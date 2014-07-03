@@ -1,3 +1,7 @@
+key.categories.bradtech=BradTech Keys
+key.ping=Ping
+key.pong=Pong
+
 itemGroup.BradTech=Brad Tech
 itemGroup.BradTechTools=Brad Tech Tools
 itemGroup.BradTechMachines=Brad Tech Machines

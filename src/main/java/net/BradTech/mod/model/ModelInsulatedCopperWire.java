@@ -6,7 +6,7 @@ import net.minecraft.entity.Entity;
 
 public class ModelInsulatedCopperWire extends ModelBase {
 
-	public enum ModelWireDirection { NORTHSOUTH, EASTWEST, UPDOWN };
+	public enum ModelWireDirection { CORE, NORTHSOUTH, EASTWEST, UPDOWN };
 	
 	// fields
 	ModelRenderer WireCoreElbow;
@@ -221,13 +221,10 @@ public class ModelInsulatedCopperWire extends ModelBase {
 	}
 	
 	
-	public void renderCore(float f) {
-		WireCoreElbow.render(f);
-	}
-	
-	
-	public void renderStraight(float f, ModelWireDirection direction) {
-		if(direction == ModelWireDirection.NORTHSOUTH) {
+	public void renderCore(float f, ModelWireDirection direction) {		
+		if(direction == ModelWireDirection.CORE) {
+			WireCoreElbow.render(f);
+		} else if(direction == ModelWireDirection.NORTHSOUTH) {
 			WireCoreNorthSouth.render(f);
 		} else if(direction == ModelWireDirection.EASTWEST) {
 			WireCoreEastWest.render(f);

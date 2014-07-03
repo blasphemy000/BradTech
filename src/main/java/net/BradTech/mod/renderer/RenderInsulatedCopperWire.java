@@ -37,37 +37,64 @@ public class RenderInsulatedCopperWire extends TileEntitySpecialRenderer {
 				GL11.glDisable(GL11.GL_LIGHTING);
 				// Figure out what parts of the model should be drawn then render each part accordingly...
 				
-				//this.model.renderCore(modelScale);
+				this.model.renderCore(modelScale, ModelWireDirection.CORE);
+				//this.model.renderCore(modelScale, ModelWireDirection.NORTHSOUTH);
+				//this.model.renderCore(modelScale, ModelWireDirection.EASTWEST);
+				//this.model.renderCore(modelScale, ModelWireDirection.UPDOWN);
 				
-				this.model.renderStraight(modelScale, ModelWireDirection.NORTHSOUTH);
-				//this.model.renderStraight(modelScale, ModelWireDirection.EASTWEST);
-				//this.model.renderStraight(modelScale, ModelWireDirection.UPDOWN);
-				
-				if(tileWire.getConnectionStatus()) {
-					this.model.renderNorth(modelScale, true);
-					this.model.renderSouth(modelScale, true);
-				} else if (!tileWire.getConnectionStatus()) {
-					this.model.renderNorth(modelScale, false);
-					this.model.renderSouth(modelScale, false);
+				if(tileWire.getRenderNorth()) {
+					if(tileWire.getConnectNorth()) {
+						if(tileWire.getAllowConnNorth())
+							this.model.renderNorth(modelScale, true);
+					} else {
+						this.model.renderNorth(modelScale, false);
+					}
 				}
 				
-				//this.model.renderNorth(modelScale, false);
-				//this.model.renderNorth(modelScale, true);
+				if(tileWire.getRenderSouth()) {
+					if(tileWire.getConnectSouth()) {
+						if(tileWire.getAllowConnSouth())
+							this.model.renderSouth(modelScale, true);
+					} else {
+						this.model.renderSouth(modelScale, false);
+					}
+				}
 				
-				//this.model.renderSouth(modelScale, false);
-				//this.model.renderSouth(modelScale, true);
-
-				//this.model.renderEast(modelScale, false);
-				//this.model.renderEast(modelScale, true);
-
-				//this.model.renderWest(modelScale, false);
-				//this.model.renderWest(modelScale, true);
-
-				//this.model.renderUp(modelScale, false);
-				//this.model.renderUp(modelScale, true);
-
-				//this.model.renderDown(modelScale, false);
-				//this.model.renderDown(modelScale, true);
+				if(tileWire.getRenderEast()) {
+					if(tileWire.getConnectEast()) {
+						if(tileWire.getAllowConnEast())
+							this.model.renderEast(modelScale, true);
+					} else {
+						this.model.renderEast(modelScale, false);
+					}
+				}
+				
+				if(tileWire.getRenderWest()) {
+					if(tileWire.getConnectWest()) {
+						if(tileWire.getAllowConnWest())
+							this.model.renderWest(modelScale, true);
+					} else {
+						this.model.renderWest(modelScale, false);
+					}
+				}
+				
+				if(tileWire.getRenderUp()) {
+					if(tileWire.getConnectUp()) {
+						if(tileWire.getAllowConnUp())
+							this.model.renderUp(modelScale, true);
+					} else {
+						this.model.renderUp(modelScale, false);
+					}
+				}
+				
+				if(tileWire.getRenderDown()) {
+					if(tileWire.getConnectDown()) {
+						if(tileWire.getAllowConnDown())
+							this.model.renderDown(modelScale, true);
+					} else {
+						this.model.renderDown(modelScale, false);
+					}
+				}
 				
 				GL11.glEnable(GL11.GL_LIGHTING);
 			GL11.glPopMatrix();

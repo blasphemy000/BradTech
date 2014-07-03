@@ -25,7 +25,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class ForgeOven extends BlockContainer {
+public class ForgeOven extends BlockContainer implements IElectricalDevice {
 
 	private final boolean isActive;
 
